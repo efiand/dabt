@@ -1,0 +1,127 @@
+@font-face {
+	font-weight: 400;
+	font-style: normal;
+	font-family: "TT Polls";
+	font-display: swap;
+	src: url("/dabt/fonts/tt-polls-normal-400.woff2") format("woff2");
+}
+
+html {
+	--color-white: #ffffff;
+	--transition: none;
+	--icon-toc: url("data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='48'%20height='48'%20viewBox='0%200%2024%2024'%20fill='currentColor'%3e%3cpath%20d='M11.8%2016.4%2022%208.8l-9-4.6-11%206.7v3l9.8%205.8L22%2012.2v-.4l-10.2%207.6-9.4-5.7v-2.6l9.4%205.3z'%20/%3e%3c/svg%3e");
+
+	font-size: 32px;
+}
+
+body {
+	min-width: 320px;
+	margin: 0;
+	line-height: 1.5rem;
+	font-family: "TT Polls", serif;
+	color: #0d0d86;
+	font-feature-settings:
+		"tnum" on,
+		"lnum" on;
+	text-rendering: optimizeLegibility;
+	-webkit-tap-highlight-color: transparent;
+	overflow: hidden scroll;
+	overflow-anchor: none;
+}
+
+main {
+	box-sizing: border-box;
+	max-width: 928px;
+	min-height: 100dvh;
+	margin-inline: auto;
+	padding: 60px 24px 48px;
+	background-color: var(--color-white);
+	background-image: linear-gradient(transparent 47px, #00008026 48px);
+	background-size: 48px 48px;
+	box-shadow: 0 1px 4px #0000005e;
+}
+
+nav {
+	display: table;
+	margin: 84px auto 0;
+}
+
+h1 {
+	margin: 0 0 48px;
+	font-weight: 400;
+	font-size: 40px;
+	line-height: inherit;
+	text-align: center;
+	transform: translateY(-2px);
+}
+
+p {
+	margin: 0;
+	text-indent: 1.25em;
+}
+
+a {
+	text-decoration-skip-ink: none;
+	text-decoration: none;
+	color: inherit;
+	transition: var(--transition);
+	transition-property: color;
+}
+
+time {
+	display: block;
+	text-align: right;
+}
+
+.separated {
+	margin-top: 48px;
+}
+
+.toc {
+	margin: 0 0 -12px;
+	padding: 0;
+	list-style: none;
+}
+
+.toc__item {
+	counter-increment: items;
+}
+
+.toc__link {
+	display: flex;
+	align-items: flex-end;
+	gap: 12px;
+}
+
+.toc__link::before {
+	content: counter(items);
+	order: 3;
+}
+
+.toc__link::after {
+	content: "";
+	flex-grow: 1;
+	order: 2;
+	border-bottom: 1px dashed;
+	transform: translateY(-12px);
+}
+
+.toc__content {
+	max-width: 65%;
+	margin-left: 1.25em;
+	text-align-last: right;
+	text-indent: -1.25em;
+}
+
+.toc-link {
+	--icon-size: 48px;
+}
+
+.toc-link::before {
+	content: "";
+	display: block;
+	background-color: currentColor;
+	width: var(--icon-size, 1.5rem);
+	height: var(--icon-size, 1.5rem);
+	mask: var(--icon-toc) no-repeat center / 100%;
+}
