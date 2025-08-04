@@ -1,0 +1,14 @@
+body {
+	color: #000000;
+	background: none;
+}
+
+nav {
+	display: none;
+}
+
+main {
+	padding: 0;
+	background: none;
+	box-shadow: none;
+}
