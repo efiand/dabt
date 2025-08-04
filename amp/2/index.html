@@ -9,8 +9,8 @@
 			<meta name="description" content="Современная бытовая сказка о деде Андрее и бабке Тане «Водка и её послед­ствия».">
 			
 		
-		<link rel="canonical" href="https://efiand.github.io/dabt/vodka-i-eyo-posledstviya">
-		<meta property="og:url" content="/dabt/vodka-i-eyo-posledstviya">
+		<link rel="canonical" href="https://efiand.github.io/dabt/2/">
+		<meta property="og:url" content="/dabt/2/">
 	
 			<meta property="og:title" content="Сказки о деде Андрее и бабке Тане. Водка и её послед­ствия">
 			<meta property="og:description" content="Современная бытовая сказка о деде Андрее и бабке Тане «Водка и её послед­ствия».">
@@ -155,13 +155,27 @@ time {
 }@media (prefers-reduced-motion: no-preference) {html {
 	--transition: 0.3s ease-in-out;
 }
-}@media (min-width: 768px) {main {
+}@media print, (min-width: 768px) {main {
 	padding-inline: 48px;
 }
-}@media (min-width: 928px) {body {
+}@media print, (min-width: 928px) {body {
 	background-color: #76726e;
 	background-image: url("/dabt/images/back.webp");
 	background-attachment: fixed;
+}
+}@media print {body {
+	color: #000000;
+	background: none;
+}
+
+nav {
+	display: none;
+}
+
+main {
+	padding: 0;
+	background: none;
+	box-shadow: none;
 }
 }</style>
 			
@@ -191,7 +205,7 @@ time {
 					<time class="separated" datetime="1997-03-16">16.03.1997</time>
 				
 					<nav>
-						<a class="toc-link" href="/dabt/amp" aria-label="Содержание"></a>
+						<a class="toc-link" href="/dabt/amp/" aria-label="Содержание"></a>
 					</nav>
 				
 			</main>

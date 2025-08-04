@@ -9,8 +9,8 @@
 			<meta name="description" content="Юмор. Современные бытовые сказки о деде Андрее и бабке Тане.">
 			
 		
-		<link rel="canonical" href="https://efiand.github.io/dabt">
-		<meta property="og:url" content="/dabt">
+		<link rel="canonical" href="https://efiand.github.io/dabt/">
+		<meta property="og:url" content="/dabt/">
 	
 			<meta property="og:title" content="Сказки о деде Андрее и бабке Тане">
 			<meta property="og:description" content="Юмор. Современные бытовые сказки о деде Андрее и бабке Тане.">
@@ -155,13 +155,27 @@ time {
 }@media (prefers-reduced-motion: no-preference) {html {
 	--transition: 0.3s ease-in-out;
 }
-}@media (min-width: 768px) {main {
+}@media print, (min-width: 768px) {main {
 	padding-inline: 48px;
 }
-}@media (min-width: 928px) {body {
+}@media print, (min-width: 928px) {body {
 	background-color: #76726e;
 	background-image: url("/dabt/images/back.webp");
 	background-attachment: fixed;
+}
+}@media print {body {
+	color: #000000;
+	background: none;
+}
+
+nav {
+	display: none;
+}
+
+main {
+	padding: 0;
+	background: none;
+	box-shadow: none;
 }
 }</style>
 			
@@ -187,19 +201,19 @@ time {
 				<h1>Сказки о деде Андрее и бабке Тане</h1>
 				<ol class="toc">
 		<li class="toc__item">
-			<a class="toc__link" href="/dabt/amp/nesostoyavshayasya-svadba">
+			<a class="toc__link" href="/dabt/amp/1/">
 				<span class="toc__content">Несостояв­шаяся свадьба</span>
 			</a>
 		</li>
 	
 		<li class="toc__item">
-			<a class="toc__link" href="/dabt/amp/vodka-i-eyo-posledstviya">
+			<a class="toc__link" href="/dabt/amp/2/">
 				<span class="toc__content">Водка и её послед­ствия</span>
 			</a>
 		</li>
 	
 		<li class="toc__item">
-			<a class="toc__link" href="/dabt/amp/skazka-o-porosyonke">
+			<a class="toc__link" href="/dabt/amp/3/">
 				<span class="toc__content">Сказка о поросёнке</span>
 			</a>
 		</li>
